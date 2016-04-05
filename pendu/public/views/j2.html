@@ -1,0 +1,49 @@
+<div class="container">
+
+
+  <div class="" ng-repeat=" word in words" >
+    <div class="" style= "display: inline-block;">
+
+
+    <h1>{{word.length}} lettre(s).</h1>  <button type="submit" class="btn btn-default" ng-click="choose(word)">choisir</button>
+  </div>
+  </div>
+  <div class="" style= "text-align: center;">
+
+
+    <div class="" ng-repeat=" letter in chosenword" style= "display: inline-block;">
+      <h1 ng-class="check(letter)? 'word' :'noword'">{{letter}}</h1>
+      <h1 class="word">_</h1>
+
+
+    </div>
+  </div>
+  <br>
+  <hr>
+  <h1>Lettres à jouer</h1>
+  <div class="" style= "text-align: center;">
+    <div class="" ng-repeat=" letter in alphabet" style= "display: inline-block;">
+      <button type="submit" class="btn btn-default" ng-click="check(letter); put(letter)" >{{letter}}</button>
+
+    </div>
+  </div>
+    <hr>
+    <h1>Lettres jouées</h1>
+  <div class="" style= "text-align: center;">
+    <div class="" ng-repeat=" letter in letters" style= "display: inline-block;">
+      <button type="submit" class="btn btn-default" >{{letter}}</button>
+
+    </div>
+  </div>
+
+
+</div>
+<hr>
+<!-- <input type="text" class="form-control" id="inputMessage"
+placeholder="Your task" ng-model="letter"> -->
+<br>
+<div>
+<img ng-src="../img/{{count}}.png" alt="" />
+</div>
+
+</div>

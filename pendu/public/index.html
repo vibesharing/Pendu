@@ -13,9 +13,12 @@
     <!-- AngularJS -->
     <script src="js/libs/angular.min.js"></script>
     <script src="js/libs/angular-route.min.js"></script>
-    <script src="js/controllers/mainController.js"></script>
-    <script src="js/services/todoService.js"></script>
-    
+
+    <script src="js/controllers/j1Controller.js"></script>
+    <script src="js/controllers/j2Controller.js"></script>
+    <script src="js/services/j1Service.js"></script>
+    <script src="js/services/j2Service.js"></script>
+
     <script src="js/app.js"></script>
     </head>
     <body>
@@ -25,8 +28,8 @@
                 <a href="#/"><img src="https://unhosted.org/slides/img/js.png" width="50px"></a>
             </div>
             <ul class="nav navbar-nav">
-                <li ng-class="{active: activetab=='/'}"><a href="#/">Home</a></li>
-                <li ng-class="{active: activetab=='/about'}"><a href="#/about">About</a></li>
+                <li ng-class="{active: activetab=='/j1'}"><a href="#/j1">Joueur 1</a></li>
+                <li ng-class="{active: activetab=='/j2'}"><a href="#/j2">Joueur 2</a></li>
             </ul>
         </div>
     </nav>

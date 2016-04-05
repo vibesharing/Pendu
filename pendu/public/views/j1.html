@@ -1,0 +1,25 @@
+<h1>Enter a word</h1>
+<form class="form-inline">
+	<div class="form-group">
+		<input type="text" class="form-control" id="inputMessage"
+			   placeholder="Your task" ng-model="description">
+	</div>
+	<button type="submit" class="btn btn-default" ng-click="confirm()">Enter</button>
+	<button type="submit" class="btn btn-default" ng-click="add()">confirm</button>
+
+</form>
+<hr>
+<ul class="list-group">
+	<li class="list-group-item" ng-repeat="j1 in j1s">
+		<form class="form-inline">
+			<div class="form-group">
+				<input type="text" class="form-control" id="inputMessage"
+					   ng-model="j1.description">
+			</div>
+			<div class="pull-right">
+				<button type="submit" class="btn btn-default" ng-click="update(j1)">Update</button>
+				<button type="submit" class="btn btn-danger" ng-click="delete(j1)">Delete</button>
+			</div>
+		</form>
+	</li>
+</ul>

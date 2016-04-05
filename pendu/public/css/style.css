@@ -9,4 +9,13 @@ body{
 }
 .navbar-header img:hover{
 	transform: rotate(360deg);
-}  
+}
+.word{
+	font-size: 102px;
+  letter-spacing: 20px;
+	text-align: center;
+}
+.noword{
+  color: red;
+
+}
